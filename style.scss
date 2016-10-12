@@ -8,6 +8,7 @@
 
 .container {
   margin: 20px auto;
+  height: 265px;
   max-height: 265px;
   max-width: 500px;
   border: 1px solid #2EC1CE;
@@ -26,10 +27,10 @@ header {
 }
 
 .boxcontent {
-  max-height: 135px;
-  max-width: 499px;
-  padding: 25px;
-
+  max-height: 0px;
+  width: 499px;
+  border: 1px solid red;
+  font-size: 0px;
 }
 
 .headHover {
@@ -37,6 +38,8 @@ header {
 }
 
 .bigbox {
-  max-height: 135px;
+  max-height: 150px;
   max-width: 499px;
   padding: 25px;
+  font-size: 14px;
+}

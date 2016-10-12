@@ -1,2 +1,27 @@
 * {
   box-sizing: border-box; }
+
+.container {
+  margin: 20px auto;
+  max-height: 265px;
+  max-width: 500px;
+  border: 1px solid #2EC1CE; }
+
+header {
+  height: 45px;
+  width: 499px;
+  padding: 12px;
+  background-color: #21C6D5;
+  border-top: none;
+  border: 1px solid #2EC1CE;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white; }
+
+.boxcontent {
+  max-height: 135px;
+  max-width: 499px;
+  padding: 25px; }
+
+.headHover {
+  background-color: #28EDFF; }

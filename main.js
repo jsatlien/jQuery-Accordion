@@ -9,15 +9,24 @@ function changeHeight (event) {
   var lastBox;
   var nextBox;
   // console.log(target);
-    if (target[0].id === "h1") {currentBox = $("#content1")};
+    if (target[0].id === "h1") {
+      currentBox = $("#content1");
+      nextBox = $("#content2");
+      lastBox = $("#content3");
+    };
     if (target[0].id === "h2") {
       currentBox = $("#content2");
-      lastBox = $("#content1")};
+      lastBox = $("#content1");
       nextBox = $("#content3");
-    if (target[0].id === "h3") { currentBox = $("#content3")};
+    };
+    if (target[0].id === "h3") {
+      currentBox = $("#content3");
+      lastBox = $("#content1");
+      nextBox = $("#content2");
+    };
     currentBox.toggleClass("bigBox");
-    lastBox.toggleClass("boxcontent");
-    nextBox.toggleClass("boxcontent");
+    lastBox.addClass("boxcontent");
+    nextBox.addClass("boxcontent");
     currentBox.toggleClass("boxcontent");
     console.log(currentBox);
 

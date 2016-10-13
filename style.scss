@@ -8,46 +8,44 @@
 
 .container {
   margin: 20px auto;
-  height: 265px;
+  height: 257px;
   max-height: 300px;
   max-width: 500px;
   border: 1px solid #2EC1CE;
+  border-top-color:transparent;
+
+  .slidebar {
+    max-height: 180px;
+    }
+
 }
 
 header {
-  height: 45px;
-  width: 499px;
-  padding: 12px;
-  background-color: #21C6D5;
-  border-top: none;
-  border: 1px solid #2EC1CE;
-  font-size: 20px;
-  font-weight: lighter;
-  color: white;
-}
+      height: 45px;
+      width: 499px;
+      padding: 12px;
+      background-color: #21C6D5;
+      border-top: none;
+      border: 1px solid #2EC1CE;
+      font-size: 20px;
+      font-weight: lighter;
+      color: white;
+      }
 
 .boxcontent {
-  max-height: 0px;
-  width: 499px;
-  border: 1px solid #2EC1CE;
-  font-size: 0px;
-  overflow: auto;
-  @include box-grow(2s);
-}
+      height: 0px;
+      font-size:14px;
+      overflow: auto;
+      @include box-grow(2s);
+      }
+
+.bigbox {
+      height:120px;
+      @include box-grow(2s);
+      }
 
 .headHover {
   background-color: #28EDFF;
-}
-
-.bigbox {
-  max-height: 265px;
-  max-width: 499px;
-  padding: 40px;
-  font-size: 14px;
-  overflow: auto;
-  border: 1px solid #2EC1CE;
-
-
 }
 
 p {

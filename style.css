@@ -3,10 +3,13 @@
 
 .container {
   margin: 20px auto;
-  height: 265px;
+  height: 257px;
   max-height: 300px;
   max-width: 500px;
-  border: 1px solid #2EC1CE; }
+  border: 1px solid #2EC1CE;
+  border-top-color: transparent; }
+  .container .slidebar {
+    max-height: 180px; }
 
 header {
   height: 45px;
@@ -20,23 +23,17 @@ header {
   color: white; }
 
 .boxcontent {
-  max-height: 0px;
-  width: 499px;
-  border: 1px solid #2EC1CE;
-  font-size: 0px;
+  height: 0px;
+  font-size: 14px;
   overflow: auto;
+  transition: height 2s ease; }
+
+.bigbox {
+  height: 120px;
   transition: height 2s ease; }
 
 .headHover {
   background-color: #28EDFF; }
-
-.bigbox {
-  max-height: 265px;
-  max-width: 499px;
-  padding: 40px;
-  font-size: 14px;
-  overflow: auto;
-  border: 1px solid #2EC1CE; }
 
 p {
   margin: 25px; }

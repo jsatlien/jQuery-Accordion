@@ -1,15 +1,15 @@
 var firstbox = $("#content1");
-console.log(firstbox);
-firstbox[0].className = "bigBox";
+firstbox.addClass("bigbox")
 
-
+var head = $("header");
+head.click(changeHeight);
+head.hover(changeColor);
 
 function changeHeight (event) {
   var target = $(event.target);
   var currentBox;
   var lastBox;
   var nextBox;
-  // console.log(target);
     if (target[0].id === "h1") {
       currentBox = $("#content1");
       nextBox = $("#content2");
@@ -25,18 +25,14 @@ function changeHeight (event) {
       lastBox = $("#content1");
       nextBox = $("#content2");
     };
-    currentBox.toggleClass("bigBox");
-    lastBox.addClass("boxcontent");
-    nextBox.addClass("boxcontent");
-    currentBox.toggleClass("boxcontent");
+    currentBox.addClass("bigbox");
+    lastBox.removeClass("bigbox")
+    lastBox.addClass("boxcontent")
+    nextBox.removeClass("bigbox");
+    nextBox.addClass("boxcontent")
 };
 
 function changeColor (event) {
   var target = $(event.target);
   target.toggleClass("headHover");
 };
-
-
-var head = $("header");
-head.click(changeHeight);
-head.hover(changeColor);

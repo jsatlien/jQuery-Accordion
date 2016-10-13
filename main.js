@@ -3,6 +3,7 @@ console.log(firstbox);
 firstbox[0].className = "bigBox";
 
 
+
 function changeHeight (event) {
   var target = $(event.target);
   var currentBox;
@@ -28,8 +29,6 @@ function changeHeight (event) {
     lastBox.addClass("boxcontent");
     nextBox.addClass("boxcontent");
     currentBox.toggleClass("boxcontent");
-    console.log(currentBox);
-
 };
 
 function changeColor (event) {

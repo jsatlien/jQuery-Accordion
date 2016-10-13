@@ -2,14 +2,14 @@
   box-sizing: border-box;
 }
 
-// @mixin box-grow($size){
-//   height: $size;
-// }
+@mixin box-grow($time){
+  transition: height $time ease;
+}
 
 .container {
   margin: 20px auto;
   height: 265px;
-  max-height: 265px;
+  max-height: 300px;
   max-width: 500px;
   border: 1px solid #2EC1CE;
 }
@@ -29,8 +29,10 @@ header {
 .boxcontent {
   max-height: 0px;
   width: 499px;
-  border: 1px solid red;
+  border: 1px solid #2EC1CE;
   font-size: 0px;
+  overflow: auto;
+  @include box-grow(2s);
 }
 
 .headHover {
@@ -38,8 +40,16 @@ header {
 }
 
 .bigbox {
-  height: 200px;
+  max-height: 265px;
   max-width: 499px;
-  padding: 25px;
+  padding: 40px;
   font-size: 14px;
+  overflow: auto;
+  border: 1px solid #2EC1CE;
+
+
+}
+
+p {
+  margin: 25px;
 }

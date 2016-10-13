@@ -4,7 +4,7 @@
 .container {
   margin: 20px auto;
   height: 265px;
-  max-height: 265px;
+  max-height: 300px;
   max-width: 500px;
   border: 1px solid #2EC1CE; }
 
@@ -22,14 +22,21 @@ header {
 .boxcontent {
   max-height: 0px;
   width: 499px;
-  border: 1px solid red;
-  font-size: 0px; }
+  border: 1px solid #2EC1CE;
+  font-size: 0px;
+  overflow: auto;
+  transition: height 2s ease; }
 
 .headHover {
   background-color: #28EDFF; }
 
 .bigbox {
-  height: 200px;
+  max-height: 265px;
   max-width: 499px;
-  padding: 25px;
-  font-size: 14px; }
+  padding: 40px;
+  font-size: 14px;
+  overflow: auto;
+  border: 1px solid #2EC1CE; }
+
+p {
+  margin: 25px; }
